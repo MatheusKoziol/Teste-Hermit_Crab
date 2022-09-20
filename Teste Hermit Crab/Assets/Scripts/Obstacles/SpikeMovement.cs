@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class SpikeMovement : MonoBehaviour
 {
-
+    // Public variables
     public Vector3 initialPosition;
     public float speed;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()

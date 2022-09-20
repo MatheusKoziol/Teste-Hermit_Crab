@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     //Private variables
     Rigidbody2D rb2d;
-    
+
 
     //Public variables
     public float thrustForce;
@@ -53,6 +53,11 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("Damage"))
         {
             CanvasScript.instance.EndGame();
+        }
+
+        if (collision.CompareTag("Point"))
+        {
+            score += 10;
         }
     }
 }
